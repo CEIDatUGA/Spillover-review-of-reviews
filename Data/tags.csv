@@ -1,0 +1,69 @@
+tag,category,code
+agriculture,AGFOOD,agricultural practices
+wildlife,AGFOOD,attraction of wildlife & commensals
+food availability,AGFOOD,food availability & distribution
+livestock,AGFOOD,livestock abundance & distribution
+water management,AGFOOD,water management
+climate change,CLIM,climate change (non-specific)
+ENSO,CLIM,ENSO
+extreme climate,CLIM,climate anomalies
+warming,CLIM,global warming
+humid,CLIM,humidity
+precip,CLIM,precipitation
+temp,CLIM,temperature
+seasons,CLIM,seasonality
+captive,HUMDEM,wildlife captivity
+food preferences,HUMDEM,"food preferences, preparation & storage"
+density,HUMDEM,human abundance & distribution
+hunting,HUMDEM,hunting behaviour
+suscep,HUMDEM,human susceptibility
+biodiversity,POPCOM,biodiversity
+composition,POPCOM,community composition
+geographic,POPCOM,geographic overlap
+interspecies,POPCOM,interspecies contact
+animal,TRAVCOM,animal trade & transport
+global trade,TRAVCOM,global trade
+global transportation,TRAVCOM,global transportation
+tourism,TRAVCOM,tourism & travel
+famine,SOCIO,famine
+politics,SOCIO,governance & politics
+displace,SOCIO,human displacement
+poverty,SOCIO,poverty
+sanitation,SOCIO,public health infrastructure & sanitation
+war,SOCIO,war & conflict
+bat,HOSTS,bat reservoir
+bird,HOSTS,bird reservoir
+primate,HOSTS,primate reservoir
+rodent,HOSTS,rodent reservoir
+swine,HOSTS,swine reservoir
+abundance,HOSTS,reservoir abundance & distribution
+foraging,HOSTS,reservoir foraging behaviour
+life history,HOSTS,reservoir life history
+microbial,HOSTS,reservoir microbiome
+phylo,HOSTS,host phylogenetic relatedness
+reservoir,HOSTS,reservoir competence
+bacteria,PATH,bacterial pathogen
+fungi,PATH,fungal pathogen
+helminths,PATH,helminth pathogen
+prions,PATH,prion pathogen
+protozoa,PATH,protozoan pathogen
+virus,PATH,viral pathogen
+adaptation,PATH,pathogen adaptation & evolution
+drug resistance,PATH,drug resistance
+switching,PATH,host switching & host range
+immune,PATH,immune evasion
+prevalence,PATH,pathogen prevalence
+close contact,PATH,close contact transmission
+intermediate,PATH,intermediate transmission
+non-close,PATH,non-close contact transmission
+vector,PATH,vector transmission
+deforestation,LAND,deforestation
+ecosystem,LAND,ecosystem enrichment
+encroachment,LAND,encroachment
+environmental,LAND,environmental degradation
+extractive,LAND,extractive industries
+fragmentation,LAND,habitat fragmentation
+conversion,LAND,land conversion for agriculture
+land,LAND,land use (non-specific)
+reforestation,LAND,reforestation & restoration
+urbanization,LAND,urbanization
