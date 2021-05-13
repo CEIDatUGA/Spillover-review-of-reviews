@@ -75,13 +75,13 @@ names(hypo)[grep("Land", names(hypo))] <-
 # converting hypothesis/tag data to numeric-------------------------------------
 
 # add new columns to populate with info about tags and themes
-hypo[, 14:90] <- 0
+hypo[, 13:89] <- 0
 
 # name columns for the tags
-colnames(hypo)[14:81] <- tags$tag
+colnames(hypo)[13:80] <- tags$tag
 
 # name columns for the themes
-colnames(hypo)[82:90] <- unique(tags$theme)
+colnames(hypo)[81:89] <- unique(tags$theme)
 
 # assign a value of 1 if a record includes a tag
 # in the corresponding theme column, sum the number of tag occurrences
@@ -100,7 +100,7 @@ for(t in 1:nrow(themes)){
 # pull out 0/1 data for tags
 
 codelabs <- tags$code
-paperTags <- hypo[, 14:81] 
+paperTags <- hypo[, 13:80] 
 colnames(paperTags) <- codelabs
 
 # write.csv(hypo, "./Data/FINALcleanedhypo.csv", row.names = FALSE)
@@ -139,7 +139,7 @@ clusternum <- dendextend::cutree(dend, k = k, h = h) %>%
   as.tbl() %>% 
   rename('clust' = '.')
 
-hypo_clust <- hypo[, c(1:3, 14:90)] %>% 
+hypo_clust <- hypo[, c(1:3, 13:89)] %>% 
   setDT(keep.rownames = T) %>%  
   left_join(clusternum, by = "rn") %>%  
   as.tbl()  
@@ -377,7 +377,7 @@ nodes <- data.frame(id = c(paste0("s0", 1:9), "s10"),
                     size = as.numeric(dispSize[1, ]))
 
 # pull out needed columns: PaperDiscipline and the tags
-DTags <- hypo[, c(14:81, 91)]
+DTags <- hypo[, c(13:80, 90)]
 
 # sum the number of times a Discipline uses each of the tags
 pSums <- DTags %>%
